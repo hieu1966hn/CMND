@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cmnd.css">
+</head>
+<body>
+    <div class="box" style="display: flex; flex-direction: row;">
+        <div style="width: 136px; height: 270px; display:flex; flex-direction: column;">
+            <div><img src="https://brasol.vn/public/ckeditor/uploads/tin-tuc/brasol.vn-logo-dang-cong-san-viet-nam-image-0-compressed.jpg" width="84"  height="84"></div>
+            <div style="margin-top: 5px;">
+                <img id="image" src="https://st.quantrimang.com/photos/image/2020/07/30/Hinh-Nen-Trang-32.jpg" height="150px" width="110px" alt="">
+            </div>
+            <div><b style="font-size: 10px;" id="expiration">Có giá trị đến:</b></div>
+        </div>
+        <div>
+            <p style="font-size: 13px;"><b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b></p>
+            <p style="font-size: 13px;"><u>Độc lập - Tự do - Hạnh phúc</u></p>
+            <p style="color: red;"><b>CĂN CƯỚC CÔNG DÂN</b></p>
+            <p class="blue" id="s1" style="text-align: center; font-size: 13.5px; margin: 10px 0px" onclick="rand()">Số:</p>
+            <div class="blue" id="s2" style="display:flex; flex-wrap: wrap; color:  rgb(12, 130, 240)" onclick="edit1()">
+                <p>Họ và tên:</p>
+            </div>
+            <br>
+            <p class="blue" id="s3" onclick="edit2()">Ngày, tháng, năm sinh:</p>
+            <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                <div class="blue" style="width: 50%;" id="s4" onclick="edit3()"><p>Giới tính:</p></div>
+                <div class="blue" style="width: 50%;" id="s5" onclick="edit4()"><p>Quốc tịch:</p></div>
+            </div>
+            <div class="blue" id="s6" style="display:flex; flex-wrap: wrap;" onclick="edit5()">
+                <p>Quê quán:</p>
+            </div>
+            <br>
+            <div class="blue" id="s7" style="display:flex; flex-wrap: wrap;" onclick="edit6()">
+                <p>Nơi thường trú:</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: left;">
+        <input type="file" onchange = "changeHandler(event)">
+    </div>
+    
+    
+    
+    
+    <script src="cmnd.js"></script>
+</body>
+</html>
